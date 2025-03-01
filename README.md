@@ -11,6 +11,9 @@ With its minimalist aesthetic and built-in dark mode, it offers a stylish and di
 - **Clean Aesthetics:** A user-friendly interface that prioritizes simplicity.  
 - **Basic Arithmetic:** Performs essential calculations with precision.  
 
+## Screenshot  
+![Modern Calculator Screenshot](https://github.com/calvin200001/CalculatorApp/blob/aa1c7b6a7ec850403bf09a97a100b3c47b3784e2/Screen%20Shot.png)  
+
 ## Technologies Used  
 - **Programming Language:** Swift  
 - **Development Environment:** Xcode  
