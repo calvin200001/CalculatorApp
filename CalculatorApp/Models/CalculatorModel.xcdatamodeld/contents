@@ -1,0 +1,36 @@
+// !$*UTF8*!
+{
+    CDStorageModel = {
+        _CMVersion = 3;
+        _schema = {
+            entities = (
+                {
+                    CDAttributes = (
+                        {
+                            name = operand1;
+                            type = Double;
+                        },
+                        {
+                            name = operand2;
+                            type = Double;
+                        },
+                        {
+                            name = operationType;
+                            type = String;
+                        },
+                        {
+                            name = result;
+                            type = Double;
+                        },
+                        {
+                            name = date;
+                            type = Date;
+                        }
+                    );
+                    name = CalculatorModel;
+                    superEntityName = NSManagedObject;
+                }
+            );
+        };
+    };
+}

@@ -1,49 +1,46 @@
 import Foundation
+import CoreData
 
 class Calculator {
     enum Operation {
         case add, subtract, multiply, divide
-    }
-    
-    private var operands: [Double] = []
-    private var operations: [Operation] = []
-    
-    func appendNumber(_ number: Double) {
-        operands.append(number)
-    }
-    
-    func storeOperation(_ operation: Operation) {
-        operations.append(operation)
-    }
-    
-    func calculate() -> Double? {
-        guard operands.count > operations.count else { return nil }
         
-        var result = operands[0]
-        for i in 0..<operations.count {
-            let nextOperand = operands[i + 1]
-            
-            switch operations[i] {
-            case .add:
-                result += nextOperand
-            case .subtract:
-                result -= nextOperand
-            case .multiply:
-                result *= nextOperand
-            case .divide:
-                guard nextOperand != 0 else { return nil }
-                result /= nextOperand
+        var string: String {
+            switch self {
+            case .add: return "+"
+            case .subtract: return "-"
+            case .multiply: return "×"
+            case .divide: return "÷"
             }
         }
-        
-        operands = [result]
-        operations = []
-        
-        return result
+    }
+    
+    private let service: CalculatorService
+    
+    init(service: CalculatorService) {
+        self.service = service
+    }
+    
+    func appendNumber(_ number: Double) throws {
+        service.appendNumber(number)
+    }
+    
+    func storeOperation(_ operation: Operation) throws {
+        service.storeOperation(operation)
+    }
+    
+    func calculate() throws -> Double {
+        try service.calculate()
     }
     
     func clear() {
-        operands = []
-        operations = []
+        service.clear()
     }
+}
+
+enum CalculatorError: Error {
+    case invalidOperation
+    case divisionByZero
+    case insufficientOperands
+    case unknownError
 }

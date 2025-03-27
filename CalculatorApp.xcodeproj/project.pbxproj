@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		2846A6E92D72119000FF5D84 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2846A6E82D72119000FF5D84 /* Default-568h@2x.png */; };
 		2846A6EB2D721DAC00FF5D84 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 2846A6EA2D721DAC00FF5D84 /* Models */; };
-		2846A6ED2D721DB700FF5D84 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846A6EC2D721DB700FF5D84 /* Calculator.swift */; };
+		2894DD722D8C880B00B223C7 /* CalculatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894DD712D8C880B00B223C7 /* CalculatorService.swift */; };
+		2894DD742D8C883C00B223C7 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894DD732D8C883C00B223C7 /* HistoryManager.swift */; };
+		2894DD762D8C884B00B223C7 /* HistorySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894DD752D8C884B00B223C7 /* HistorySession.swift */; };
+		2894DD782D8C891D00B223C7 /* CalculatorModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894DD772D8C891C00B223C7 /* CalculatorModel+CoreDataClass.swift */; };
+		2894DD7E2D8C97AD00B223C7 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846A6EC2D721DB700FF5D84 /* Calculator.swift */; };
+		2894DD812D8CB2D600B223C7 /* CalculatorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2894DD7F2D8CB2D600B223C7 /* CalculatorModel.xcdatamodeld */; };
+		289CDE942D949DAE0075F7C6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289CDE932D949DAE0075F7C6 /* HistoryViewController.swift */; };
 		28BBFFAA2D720EE000EEEF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBFFA92D720EE000EEEF53 /* AppDelegate.swift */; };
 		28BBFFAC2D720EE000EEEF53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBFFAB2D720EE000EEEF53 /* SceneDelegate.swift */; };
 		28BBFFAE2D720EE000EEEF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBFFAD2D720EE000EEEF53 /* ViewController.swift */; };
-		28BBFFB12D720EE000EEEF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BBFFAF2D720EE000EEEF53 /* Main.storyboard */; };
 		28BBFFB32D720EE300EEEF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BBFFB22D720EE300EEEF53 /* Assets.xcassets */; };
-		28BBFFB62D720EE300EEEF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BBFFB42D720EE300EEEF53 /* LaunchScreen.storyboard */; };
 		28BBFFC12D720EE300EEEF53 /* CalculatorApp2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBFFC02D720EE300EEEF53 /* CalculatorApp2Tests.swift */; };
 		28BBFFCC2D720EE300EEEF53 /* CalculatorApp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBFFCB2D720EE300EEEF53 /* CalculatorApp2UITests.swift */; };
 /* End PBXBuildFile section */
@@ -37,17 +41,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2894DD7B2D8C8A4600B223C7 /* Copy Core Data Model */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Core Data Model";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2846A6E82D72119000FF5D84 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2846A6EA2D721DAC00FF5D84 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = CalculatorApp/Models; sourceTree = "<group>"; };
 		2846A6EC2D721DB700FF5D84 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Calculator.swift; path = Models/Calculator.swift; sourceTree = "<group>"; };
+		2894DD712D8C880B00B223C7 /* CalculatorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculatorService.swift; path = CalculatorApp/Models/CalculatorService.swift; sourceTree = "<group>"; };
+		2894DD732D8C883C00B223C7 /* HistoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryManager.swift; path = CalculatorApp/Models/HistoryManager.swift; sourceTree = "<group>"; };
+		2894DD752D8C884B00B223C7 /* HistorySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistorySession.swift; path = CalculatorApp/Models/HistorySession.swift; sourceTree = "<group>"; };
+		2894DD772D8C891C00B223C7 /* CalculatorModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CalculatorModel+CoreDataClass.swift"; path = "CalculatorApp/Models/CalculatorModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2894DD802D8CB2D600B223C7 /* CalculatorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalculatorModel.xcdatamodel; sourceTree = "<group>"; };
+		289CDE932D949DAE0075F7C6 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = CalculatorApp/HistoryViewController.swift; sourceTree = "<group>"; };
 		28BBFFA62D720EE000EEEF53 /* CalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BBFFA92D720EE000EEEF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BBFFAB2D720EE000EEEF53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28BBFFAD2D720EE000EEEF53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28BBFFB02D720EE000EEEF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28BBFFB22D720EE300EEEF53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		28BBFFB52D720EE300EEEF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28BBFFB72D720EE300EEEF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28BBFFBC2D720EE300EEEF53 /* CalculatorApp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorApp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BBFFC02D720EE300EEEF53 /* CalculatorApp2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorApp2Tests.swift; sourceTree = "<group>"; };
@@ -85,6 +106,12 @@
 		28BBFF9D2D720EE000EEEF53 = {
 			isa = PBXGroup;
 			children = (
+				289CDE932D949DAE0075F7C6 /* HistoryViewController.swift */,
+				2894DD7F2D8CB2D600B223C7 /* CalculatorModel.xcdatamodeld */,
+				2894DD772D8C891C00B223C7 /* CalculatorModel+CoreDataClass.swift */,
+				2894DD752D8C884B00B223C7 /* HistorySession.swift */,
+				2894DD732D8C883C00B223C7 /* HistoryManager.swift */,
+				2894DD712D8C880B00B223C7 /* CalculatorService.swift */,
 				2846A6E82D72119000FF5D84 /* Default-568h@2x.png */,
 				28BBFFA82D720EE000EEEF53 /* CalculatorApp */,
 				28BBFFBF2D720EE300EEEF53 /* CalculatorAppTests */,
@@ -111,9 +138,7 @@
 				28BBFFA92D720EE000EEEF53 /* AppDelegate.swift */,
 				28BBFFAB2D720EE000EEEF53 /* SceneDelegate.swift */,
 				28BBFFAD2D720EE000EEEF53 /* ViewController.swift */,
-				28BBFFAF2D720EE000EEEF53 /* Main.storyboard */,
 				28BBFFB22D720EE300EEEF53 /* Assets.xcassets */,
-				28BBFFB42D720EE300EEEF53 /* LaunchScreen.storyboard */,
 				28BBFFB72D720EE300EEEF53 /* Info.plist */,
 			);
 			path = CalculatorApp;
@@ -147,6 +172,7 @@
 				28BBFFA22D720EE000EEEF53 /* Sources */,
 				28BBFFA32D720EE000EEEF53 /* Frameworks */,
 				28BBFFA42D720EE000EEEF53 /* Resources */,
+				2894DD7B2D8C8A4600B223C7 /* Copy Core Data Model */,
 			);
 			buildRules = (
 			);
@@ -242,10 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2846A6EB2D721DAC00FF5D84 /* Models in Resources */,
-				28BBFFB62D720EE300EEEF53 /* LaunchScreen.storyboard in Resources */,
 				2846A6E92D72119000FF5D84 /* Default-568h@2x.png in Resources */,
 				28BBFFB32D720EE300EEEF53 /* Assets.xcassets in Resources */,
-				28BBFFB12D720EE000EEEF53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +294,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2894DD7E2D8C97AD00B223C7 /* Calculator.swift in Sources */,
+				2894DD742D8C883C00B223C7 /* HistoryManager.swift in Sources */,
+				2894DD812D8CB2D600B223C7 /* CalculatorModel.xcdatamodeld in Sources */,
+				289CDE942D949DAE0075F7C6 /* HistoryViewController.swift in Sources */,
+				2894DD762D8C884B00B223C7 /* HistorySession.swift in Sources */,
 				28BBFFAE2D720EE000EEEF53 /* ViewController.swift in Sources */,
-				2846A6ED2D721DB700FF5D84 /* Calculator.swift in Sources */,
 				28BBFFAA2D720EE000EEEF53 /* AppDelegate.swift in Sources */,
 				28BBFFAC2D720EE000EEEF53 /* SceneDelegate.swift in Sources */,
+				2894DD782D8C891D00B223C7 /* CalculatorModel+CoreDataClass.swift in Sources */,
+				2894DD722D8C880B00B223C7 /* CalculatorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,25 +337,6 @@
 			targetProxy = 28BBFFC82D720EE300EEEF53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		28BBFFAF2D720EE000EEEF53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28BBFFB02D720EE000EEEF53 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		28BBFFB42D720EE300EEEF53 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28BBFFB52D720EE300EEEF53 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		28BBFFCE2D720EE300EEEF53 /* Debug */ = {
@@ -378,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -432,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -449,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T27YSW4J9;
 				INFOPLIST_FILE = "$(SRCROOT)/CalculatorApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T27YSW4J9;
 				INFOPLIST_FILE = "$(SRCROOT)/CalculatorApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,6 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T27YSW4J9;
 				INFOPLIST_FILE = CalculatorApp2UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,6 +554,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CalculatorApp2;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
@@ -551,6 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T27YSW4J9;
 				INFOPLIST_FILE = CalculatorApp2UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,6 +577,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CalculatorApp2;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};
@@ -604,6 +621,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2894DD7F2D8CB2D600B223C7 /* CalculatorModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2894DD802D8CB2D600B223C7 /* CalculatorModel.xcdatamodel */,
+			);
+			currentVersion = 2894DD802D8CB2D600B223C7 /* CalculatorModel.xcdatamodel */;
+			path = CalculatorModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 28BBFF9E2D720EE000EEEF53 /* Project object */;
 }
